@@ -19,6 +19,9 @@
       amount: parseFloat(amount.value)
     }
     emit("transactionSubmitted", transactionData)
+
+    text.value = "";
+    amount.value= "";
   }
   
 </script>
