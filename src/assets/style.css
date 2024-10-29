@@ -155,3 +155,9 @@ input[type='number'] {
 .list li:hover .delete-btn {
   opacity: 1;
 }
+
+@media (max-width: 800px){
+  .delete-btn{
+    opacity: 1;
+  }
+}
