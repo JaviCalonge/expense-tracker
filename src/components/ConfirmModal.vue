@@ -1,13 +1,3 @@
-<template>
-  <div v-if="show" class="confirm-overlay">
-    <div class="confirm-box">
-      <p>{{ message }}</p>
-      <button @click="confirm">Sí</button>
-      <button @click="cancel">No</button>
-    </div>
-  </div>
-</template>
-
 <script setup>
 import { defineProps, defineEmits } from "vue";
 
@@ -30,6 +20,16 @@ const cancel = () => {
 };
 
 </script>
+
+<template>
+  <div v-if="show" class="confirm-overlay">
+    <div class="confirm-box">
+      <p>{{ message }}</p>
+      <button @click="confirm">Sí</button>
+      <button @click="cancel">No</button>
+    </div>
+  </div>
+</template>
 
 <style scoped>
 .confirm-overlay {
